@@ -20,10 +20,10 @@
           <div class="py-2 md:py-0  flex flex-col md:flex-row md:items-center gap-0.5 md:gap-1">
             <div class="grow">
               <div class="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
-                <x-nav-link :active=true href="/">Home</x-nav-link>
-                <x-nav-link href="/about">About</x-nav-link>
-                <x-nav-link href="/contact">Contact</x-nav-link>
-                <x-nav-link href="/posts/show">Posts</x-nav-link>
+                <x-nav-link :active="request()->routeIs('home')" href="/">Home</x-nav-link>
+                <x-nav-link :active="request()->routeIs('about')" href="/about">About</x-nav-link>
+                <x-nav-link :active="request()->routeIs('contact')" href="/contact">Contact</x-nav-link>
+                <x-nav-link :active="request()->routeIs('posts.*')" href="/posts/show">Posts</x-nav-link>
               </div>
             </div>
 
