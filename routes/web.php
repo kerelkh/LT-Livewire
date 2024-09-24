@@ -2,6 +2,7 @@
 
 use App\Livewire\About;
 use App\Livewire\Contact;
+use App\Livewire\Error404;
 use App\Livewire\Home;
 use App\Livewire\Login;
 use App\Livewire\Posts\Show;
@@ -12,3 +13,5 @@ Route::get('/about', About::class)->name('about');
 Route::get('/contact', Contact::class)->name('contact');
 Route::get('/posts/show', Show::class)->name('posts.show');
 Route::get('/login', Login::class)->name('login');
+
+Route::fallback(Error404::class);

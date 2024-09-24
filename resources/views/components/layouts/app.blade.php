@@ -8,7 +8,7 @@
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body>
+    <body class="min-h-screen">
 
         <!-- Menu Header -->
         <x-menu-header></x-menu-header>
