@@ -8,3 +8,4 @@ Project for livewire laravel, more like components next level from blade
 2. to make component `php artisan make:livewire <Component>`
 3. This will make livewire component and livewire view
 4. Next you need to make route on web.php
+5. Link it to the component livewire on app folder
