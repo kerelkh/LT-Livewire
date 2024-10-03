@@ -14,3 +14,7 @@ Project for livewire laravel, more like components next level from blade
 ## App Layout
 
 to make layout `php artisan livewire:layout` , this will create file app.blade.php (layout app) on resources/views/components/layouts.
+
+## Need to change config for livewire?
+
+publish the livewire config with this command `php artisan livewire:publish --config` . It will poublish config on Config folder, there you can change config livewire as you want
