@@ -21,4 +21,4 @@ publish the livewire config with this command `php artisan livewire:publish --co
 
 ## TIPS
 
-> 1. If you want SPA model look like, use `wire:navigate` on link (tag `<a>`) <== Prefered way
+> 1. If you want SPA model look like, use `wire:navigate` on link (tag `<a>`) <== Prefered way (i think :) )
