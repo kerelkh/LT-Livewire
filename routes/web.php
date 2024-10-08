@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CommentController;
 use App\Livewire\About;
 use App\Livewire\Contact;
 use App\Livewire\Error404;
