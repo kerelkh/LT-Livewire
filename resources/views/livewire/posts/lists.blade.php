@@ -2,9 +2,9 @@
     <ul class="space-y-5">
     @foreach ($comments as  $co)
         <li class="flex ms-auto gap-x-2 sm:gap-x-4" wire:key="{{ $co->id }}">
-            <div class="grow text-end space-y-3">
+            <div class="grow text-end space-y-3 group">
                 <!-- Card -->
-                <p class="text-sm text-gray-500">{{ $co->author }}</p>
+                <div class="text-sm text-gray-500 flex gap-2 items-center justify-end">{{ $co->author }} <a wire:navigate href="{{ route('posts.edit', ['comment' => $co]) }}"><img src="{{ asset('icons/edit.svg') }}"/></a> </div>
                 <div class="inline-block bg-blue-600 rounded-2xl p-4 shadow-sm">
                 <p class="text-sm text-white">
                     {{ $co->comment }}
