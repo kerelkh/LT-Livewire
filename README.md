@@ -39,3 +39,33 @@ In App\Livewire\<Component> you can define control over form.
 6. when validate fail, the error will display like you using casual blade template, where you define `@error('author')`
 7. to send flash message you can run `session()->flash('success', 'Comment has been saved.');`
 8. and reset the field to empty again you can type `$this->reset()`. this will reset form input.
+
+## FORM EDIT
+
+Edit form livewire:
+1. Create component laravel for edit and use model binding
+2. use lifecycle hook like mount() to initialize public property to the form
+3. Create method for update like : `update()` to save newest data like usual controller
+4. then fire a session flash `session()->flash('success', 'Update data succeed');` and redirect if you want to `$this->redirect()`
+
+## FORM DELETE
+
+To delete you can fire like dispatch event on click delete button
+1. `
+   <button wire:click="$dispatch('delete-comment', { comment: {{ $co }}})" wire:confirm="Are you sure?" type="button">
+        <img src="{{ asset('icons/remove.png') }}" class="w-4 h-4"/>
+   </button>
+`
+* when click button: dispatch will fire method on event listening 'delete-comment' with param `$comment`
+* wire:confirm will fire javascript confirmation
+
+2. `#[On('delete-comment')]
+    public function delete(Comment $comment)
+    {
+        try{
+            $comment->delete();
+        }catch (\Exception $e){
+            session()->flash('error', 'Failed delete comment.');
+        }
+    }`
+* this method will delete `$comment`.
