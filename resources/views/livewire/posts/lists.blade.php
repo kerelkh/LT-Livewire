@@ -4,7 +4,17 @@
         <li class="flex ms-auto gap-x-2 sm:gap-x-4" wire:key="{{ $co->id }}">
             <div class="grow text-end space-y-3 group">
                 <!-- Card -->
-                <div class="text-sm text-gray-500 flex gap-2 items-center justify-end">{{ $co->author }} <a wire:navigate href="{{ route('posts.edit', ['comment' => $co]) }}"><img src="{{ asset('icons/edit.svg') }}"/></a> </div>
+                <div class="text-sm text-gray-500 flex gap-2 items-center justify-end">
+                    {{ ucfirst($co->author) }}
+                    <a wire:navigate href="{{ route('posts.edit', ['comment' => $co]) }}">
+                        <img src="{{ asset('icons/edit.svg') }}" class="w-4 h-4"/>
+                    </a>
+                    <div class="flex justify-end items-center">
+                        <button wire:click="$dispatch('delete-comment', { comment: {{ $co }}})" wire:confirm="Are you sure?" type="button">
+                            <img src="{{ asset('icons/remove.png') }}" class="w-4 h-4"/>
+                        </button>
+                    </div>
+                </div>
                 <div class="inline-block bg-blue-600 rounded-2xl p-4 shadow-sm">
                 <p class="text-sm text-white">
                     {{ $co->comment }}

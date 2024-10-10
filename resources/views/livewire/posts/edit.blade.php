@@ -9,6 +9,9 @@
         </a>
         <div class="mt-5 p-4 relative z-10 bg-white border rounded-xl sm:mt-10 md:p-10 dark:bg-neutral-900 dark:border-neutral-700">
             <x-alert></x-alert>
+            <div class="flex justify-end items-center">
+                <button wire:click="delete" wire:confirm="Are you sure?" type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-red-100 text-red-800 hover:bg-red-200 focus:outline-none focus:bg-red-200 disabled:opacity-50 disabled:pointer-events-none dark:text-red-500 dark:bg-red-800/30 dark:hover:bg-red-800/20 dark:focus:bg-red-800/20">Delete</button>
+            </div>
             <form wire:submit="update">
               <div class="mb-4 sm:mb-8">
                 <label for="hs-feedback-post-comment-name-1" class="block mb-2 text-sm font-medium dark:text-white">Author</label>

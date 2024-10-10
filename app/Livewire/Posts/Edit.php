@@ -3,6 +3,7 @@
 namespace App\Livewire\Posts;
 
 use App\Models\Comment;
+use Livewire\Attributes\On;
 use Livewire\Component;
 use Livewire\Attributes\Validate;
 
@@ -45,6 +46,18 @@ class Edit extends Component
             session()->flash('success', 'Update success');
         }catch (\Exception $e) {
             session()->flash('error', 'Update failed');
+        }
+    }
+
+    public function delete()
+    {
+        try{
+            $this->modComment->delete();
+            $this->redirect(route('posts.show'));
+
+            session()->flash('success', 'Delete success');
+        }catch (\Exception $e) {
+            session()->flash('error', 'Delete failed');
         }
     }
 }
