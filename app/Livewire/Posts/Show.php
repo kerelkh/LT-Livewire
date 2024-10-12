@@ -2,6 +2,8 @@
 
 namespace App\Livewire\Posts;
 
+use App\Models\Timeline;
+use Livewire\Attributes\On;
 use Livewire\Component;
 
 class Show extends Component
@@ -10,4 +12,5 @@ class Show extends Component
     {
         return view('livewire.posts.show');
     }
+
 }
