@@ -27,7 +27,7 @@
             </div>
             <!-- End Card -->
             <div class="mt-5">
-                <livewire:timeline.show lazy="true"></livewire:timeline.show>
+                <livewire:timeline.show :lazy="true"></livewire:timeline.show>
             </div>
             </div>
         </div>

@@ -9,16 +9,14 @@ use Livewire\Component;
 
 class Show extends Component
 {
-    #[On('refresh-timeline')]
-    public function refresh()
-    {
-        //
-    }
+
+    protected $listeners = [
+        'refresh-timeline' => '$refresh'
+    ];
 
     public function render()
     {
         $posts = Timeline::orderBy('created_at', 'desc')->get();
-        sleep(1);
         return view('livewire.timeline.show', ['posts' => $posts ]);
     }
 
