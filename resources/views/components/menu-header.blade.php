@@ -21,6 +21,7 @@
             <div class="grow">
               <div class="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
                 <x-nav-link :active="request()->routeIs('home')" href="/">Home</x-nav-link>
+                <x-nav-link :active="request()->routeIs('products*')" href="{{ route('products') }}">Product</x-nav-link>
                 <x-nav-link :active="request()->routeIs('timeline*')" href="{{ route('timeline') }}">Timeline</x-nav-link>
                 <x-nav-link :active="request()->routeIs('about')" href="/about">About</x-nav-link>
                 <x-nav-link :active="request()->routeIs('contact')" href="/contact">Contact</x-nav-link>
