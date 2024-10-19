@@ -76,5 +76,6 @@ To delete you can fire like dispatch event on click delete button
 
 ### Make Product Page
 
+### Make Product Detail
 
 ### Make Cart
