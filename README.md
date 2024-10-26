@@ -89,3 +89,5 @@ To delete you can fire like dispatch event on click delete button
 ### Make Admin Section
 
 ### Admin input product
+
+### Dashboard stock sell
