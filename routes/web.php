@@ -3,6 +3,7 @@
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\LogoutController;
 use App\Livewire\About;
+use App\Livewire\Cart;
 use App\Livewire\Contact;
 use App\Livewire\Error404;
 use App\Livewire\Home;
@@ -21,6 +22,8 @@ Route::middleware(['auth'])->group(function() {
     Route::get('/posts/edit/{comment}', Edit::class)->name('posts.edit');
     Route::get('/timeline', Timeline::class)->name('timeline');
     Route::get('/products', Product::class)->name('products');
+
+    Route::get('/cart', Cart::class)->name('cart');
 
 });
 
