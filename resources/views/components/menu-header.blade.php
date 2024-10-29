@@ -27,6 +27,7 @@
                 <x-nav-link :active="request()->routeIs('contact')" href="/contact">Contact</x-nav-link>
                 <x-nav-link :active="request()->routeIs('posts.*')" href="/posts/show">Posts</x-nav-link>
                 <x-nav-link :active="request()->routeIs('cart*')" href="/cart"><img src="{{ asset('icons/icon-cart.png') }}"/></x-nav-link>
+                <x-nav-link :active="request()->routeIs('dashboard*')" href="/dashboard">Dashboard</x-nav-link>
               </div>
             </div>
 

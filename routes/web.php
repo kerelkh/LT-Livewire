@@ -2,9 +2,11 @@
 
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Middleware\isAdmin;
 use App\Livewire\About;
 use App\Livewire\Cart;
 use App\Livewire\Contact;
+use App\Livewire\Dashboard;
 use App\Livewire\Error404;
 use App\Livewire\Home;
 use App\Livewire\Login;
@@ -24,6 +26,8 @@ Route::middleware(['auth'])->group(function() {
     Route::get('/products', Product::class)->name('products');
 
     Route::get('/cart', Cart::class)->name('cart');
+
+    Route::get('/dashboard', Dashboard::class)->name('dashboard')->middleware([isAdmin::class]);
 
 });
 

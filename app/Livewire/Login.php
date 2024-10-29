@@ -22,7 +22,11 @@ class Login extends Component
     {
         if(Auth::attempt($this->validate()))
         {
-            return to_route('home');
+            if(Auth::user()->role == 1){
+                return to_route('dashboard');
+            }else{
+                return to_route('home');
+            }
         }
 
         session()->flash('error', 'Email or password does not match');
