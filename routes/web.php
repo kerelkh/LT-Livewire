@@ -7,6 +7,8 @@ use App\Livewire\About;
 use App\Livewire\Cart;
 use App\Livewire\Contact;
 use App\Livewire\Dashboard;
+use App\Livewire\Dashboard\Product\AddProduct;
+use App\Livewire\DashboardProduct;
 use App\Livewire\Error404;
 use App\Livewire\Home;
 use App\Livewire\Login;
@@ -27,8 +29,11 @@ Route::middleware(['auth'])->group(function() {
 
     Route::get('/cart', Cart::class)->name('cart');
 
-    Route::get('/dashboard', Dashboard::class)->name('dashboard')->middleware([isAdmin::class]);
-
+    Route::middleware([isAdmin::class])->group(function() {
+        Route::get('/dashboard', Dashboard::class)->name('dashboard');
+        Route::get('/dashboard/product', DashboardProduct::class)->name('dashboard.product');
+        Route::get('/dashboard/product/add', AddProduct::class)->name('dashboard.product.add');
+    });
 });
 
 
