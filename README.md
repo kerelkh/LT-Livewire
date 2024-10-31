@@ -80,6 +80,9 @@ To delete you can fire like dispatch event on click delete button
 
 ### Make Cart
 
+1. create link menu cart
+2. create page display cart and total price
+
 ### Make Product Status
 
 ### Make history product
