@@ -91,6 +91,8 @@ To delete you can fire like dispatch event on click delete button
 
 ### Make Admin Section
 
+1. Create dashboard admin
+
 ### Admin input product
 
 ### Dashboard stock sell
