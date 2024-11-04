@@ -92,6 +92,7 @@ To delete you can fire like dispatch event on click delete button
 ### Make Admin Section
 
 1. Create dashboard admin
+2. create product list
 
 ### Admin input product
 
