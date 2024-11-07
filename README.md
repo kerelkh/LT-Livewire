@@ -94,6 +94,7 @@ To delete you can fire like dispatch event on click delete button
 1. Create dashboard admin
 2. create product list
 3. create add product
+4. create edit product
 
 ### Admin input product
 
