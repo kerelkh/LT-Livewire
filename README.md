@@ -78,6 +78,7 @@ To delete you can fire like dispatch event on click delete button
 
 1. create product page
 2. create product detail
+3. Add review column
 
 ### Make Product Detail
 
