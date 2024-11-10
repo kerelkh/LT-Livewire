@@ -89,6 +89,8 @@ To delete you can fire like dispatch event on click delete button
 
 ### Make Product Status
 
+1. create page status product
+
 ### Make history product
 
 ### Make Filter katalog
