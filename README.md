@@ -106,5 +106,6 @@ To delete you can fire like dispatch event on click delete button
 ### Admin input product
 
 1. Add product
+2. edit product
 
 ### Dashboard stock sell
