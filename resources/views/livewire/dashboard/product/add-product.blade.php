@@ -20,6 +20,9 @@
               peer-[:not(:placeholder-shown)]:translate-x-0.5
               peer-[:not(:placeholder-shown)]:-translate-y-1.5
               peer-[:not(:placeholder-shown)]:text-gray-500 dark:peer-[:not(:placeholder-shown)]:text-neutral-500 dark:text-neutral-500">Name Product</label>
+            @error('name')
+            <span class="text-red-600 text-xs">{{ $message }}</span>
+            @enderror
         </div>
         <div class="relative mb-4">
             <input wire:model="stock" type="text" id="hs-floating-input-email-value" class="peer p-4 block w-full max-w-xl border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
@@ -38,6 +41,9 @@
               peer-[:not(:placeholder-shown)]:translate-x-0.5
               peer-[:not(:placeholder-shown)]:-translate-y-1.5
               peer-[:not(:placeholder-shown)]:text-gray-500 dark:peer-[:not(:placeholder-shown)]:text-neutral-500 dark:text-neutral-500">Stock</label>
+            @error('stock')
+            <span class="text-red-600 text-xs">{{ $message }}</span>
+            @enderror
         </div>
         <div class="relative mb-4">
             <input wire:model="price" type="number" id="hs-floating-input-email-value" class="peer p-4 block w-full max-w-xl border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
@@ -56,6 +62,10 @@
               peer-[:not(:placeholder-shown)]:translate-x-0.5
               peer-[:not(:placeholder-shown)]:-translate-y-1.5
               peer-[:not(:placeholder-shown)]:text-gray-500 dark:peer-[:not(:placeholder-shown)]:text-neutral-500 dark:text-neutral-500">Price (Rp.)</label>
+            @error('price')
+            <span class="text-red-600 text-xs">{{ $message }}</span>
+            @enderror
         </div>
+        <button type="submit" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-600 focus:outline-none focus:bg-teal-600 disabled:opacity-50 disabled:pointer-events-none">Save</button>
     </form>
 </div>

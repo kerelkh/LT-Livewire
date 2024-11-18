@@ -10,6 +10,8 @@ class DashboardProduct extends Component
 {
     public function render()
     {
-        return view('livewire.dashboard-product');
+        $products = \App\Models\Product::all();
+//        dd($products);
+        return view('livewire.dashboard-product', compact('products'));
     }
 }

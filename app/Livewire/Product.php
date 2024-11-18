@@ -8,6 +8,7 @@ class Product extends Component
 {
     public function render()
     {
-        return view('livewire.product');
+        $products = \App\Models\Product::orderBy('created_at', 'desc')->get();
+        return view('livewire.product', compact('products'));
     }
 }

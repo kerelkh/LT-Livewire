@@ -15,6 +15,7 @@ use App\Livewire\Login;
 use App\Livewire\Posts\Edit;
 use App\Livewire\Posts\Show;
 use App\Livewire\Product;
+use App\Livewire\ProductDetail;
 use App\Livewire\Timeline;
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +29,8 @@ Route::middleware(['auth'])->group(function() {
     Route::get('/products', Product::class)->name('products');
 
     Route::get('/cart', Cart::class)->name('cart');
+
+    Route::get('/product/detail/{id}', ProductDetail::class)->name('product.detail');
 
     Route::middleware([isAdmin::class])->group(function() {
         Route::get('/dashboard', Dashboard::class)->name('dashboard');
