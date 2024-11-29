@@ -10,7 +10,6 @@ Project for livewire laravel, more like components next level from blade
 5. Link it to the component livewire on app folder
 
 ## App Layout
-
 to make layout `php artisan livewire:layout` , this will create file app.blade.php (layout app) on resources/views/components/layouts.
 
 ## Need to change config for livewire?
