@@ -1,4 +1,4 @@
-# LT Livewire
+# LT Livewire package
 
 Project for livewire laravel, more like components next level from blade
 
