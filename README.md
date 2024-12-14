@@ -15,7 +15,6 @@ publish the livewire config with this command `php artisan livewire:publish --co
 
 > 1. If you want SPA model look like, use `wire:navigate` on link (tag `<a>`) <== Prefered way (i think :) )
 
-
 ## FORM POST
 
 Treat `Form` like Component when you make form you make component.
