@@ -12,7 +12,6 @@ to make layout `php artisan livewire:layout` , this will create file app.blade.p
 publish the livewire config with this command `php artisan livewire:publish --config` . It will poublish config on Config folder, there you can change config livewire as you want
 
 ## TIPS
-
 > 1. If you want SPA model look like, use `wire:navigate` on link (tag `<a>`) <== Prefered way (i think :) )
 
 ## FORM POST
