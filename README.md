@@ -31,7 +31,6 @@ In App\Livewire\<Component> you can define control over form.
 8. and reset the field to empty again you can type `$this->reset()`. this will reset form input.
 
 ## FORM EDIT
-
 Edit form livewire:
 1. Create component laravel for edit and use model binding
 2. use lifecycle hook like mount() to initialize public property to the form
