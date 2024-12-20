@@ -38,7 +38,6 @@ Edit form livewire:
 4. then fire a session flash `session()->flash('success', 'Update data succeed');` and redirect if you want to `$this->redirect()`
 
 ## FORM DELETE
-
 To delete you can fire like dispatch event on click delete button
 1. `
    <button wire:click="$dispatch('delete-comment', { comment: {{ $co }}})" wire:confirm="Are you sure?" type="button">
