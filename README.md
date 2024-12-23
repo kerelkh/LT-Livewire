@@ -89,7 +89,6 @@ To delete you can fire like dispatch event on click delete button
 4. create edit product
 
 ### Admin input product
-
 1. Add product
 2. edit product
 
