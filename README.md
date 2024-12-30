@@ -26,7 +26,6 @@ In App\Livewire\<Component> you can define control over form.
 6. when validate fail, the error will display like you using casual blade template, where you define `@error('author')`
 7. to send flash message you can run `session()->flash('success', 'Comment has been saved.');`
 8. and reset the field to empty again you can type `$this->reset()`. this will reset form input.
-
 ## FORM EDIT
 Edit form livewire:
 1. Create component laravel for edit and use model binding
