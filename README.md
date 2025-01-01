@@ -32,7 +32,6 @@ Edit form livewire:
 2. use lifecycle hook like mount() to initialize public property to the form
 3. Create method for update like : `update()` to save newest data like usual controller
 4. then fire a session flash `session()->flash('success', 'Update data succeed');` and redirect if you want to `$this->redirect()`
-
 ## FORM DELETE
 To delete you can fire like dispatch event on click delete button
 1. `
