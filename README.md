@@ -41,7 +41,6 @@ To delete you can fire like dispatch event on click delete button
 `
 * when click button: dispatch will fire method on event listening 'delete-comment' with param `$comment`
 * wire:confirm will fire javascript confirmation
-
 2. `#[On('delete-comment')]
     public function delete(Comment $comment)
     {
