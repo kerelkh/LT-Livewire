@@ -15,7 +15,6 @@ publish the livewire config with this command `php artisan livewire:publish --co
 ## FORM POST
 Treat `Form` like Component when you make form you make component.
 In App\Livewire\<Component> you can define control over form.
-
 1. For field, you can define it as public property on class and link it to html using `wire:model=<NameVariable>`
 2. For submit, you type in on form tag `wire:submit=<FunctionName>` . FunctionName is what livewire will execute if form is submit
 3. in Livewire 3, you don't need define `wire:submit.prevent=<FunctionName>` to prevent default action when submit.
