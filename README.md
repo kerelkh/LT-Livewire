@@ -51,7 +51,6 @@ To delete you can fire like dispatch event on click delete button
     }`
 * this method will delete `$comment`.
 
-
 ### Nested Component
 ### Make Product Page
 1. create product page
