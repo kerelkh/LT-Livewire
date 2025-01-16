@@ -57,6 +57,7 @@ To delete you can fire like dispatch event on click delete button
 2. create product detail
 3. Add review column
 
+
 ### Make Product Detail
 ### Make Cart
 
